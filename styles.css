@@ -1,0 +1,126 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0rem;
+    padding: 0rem;
+}
+.body2{
+    margin: 0 7rem 0rem 7rem;
+    align-items: center;
+}
+
+#nombres li{
+    margin: 50px 50px 30px;
+    flex-grow: 1;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    font-size: 13px;
+}
+
+#nombres li:before{
+    content: '';
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-right-width: 7px;
+    border-left-width: 7px;
+    border-bottom: 14px solid black;
+}
+
+h1{ 
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin:3rem 1.5rem 1rem 1.5rem;
+    color: #3d3b3b;
+}
+
+header{
+    padding-top: 0.3rem;
+    padding-bottom: 0rem;
+    /*background-color: rgb(240, 249, 255);*/
+    background-image: url("./img/header.png");
+    width: 100%;
+}
+hr{
+    margin-top: 0rem;
+    color: #0000007f;
+}
+header p{
+    font-size: 1rem;
+    text-align: center;
+    margin: 0.5rem 0.5rem 2rem 0.5rem;
+    color: #3d3b3b;
+}
+.row{
+    box-sizing: content-box !important;
+}
+.logo{
+    width: 16rem;
+    height: auto;
+    margin: auto;
+    display: block;
+}
+.subtitulo{
+    font-size: 0.5rem;
+    text-align: center;
+    color: #424242;
+    font-weight: bold;
+    margin: 1.5rem 0 1rem 0;
+}
+.subtitulo hr{
+    width: 40%;
+    border: 1.2px solid;
+    margin: 1rem auto 0.3rem auto;
+}
+.contenedor p{
+    font-size: 1rem;
+    text-align: justify;
+    color: #3d3b3b;
+    margin: 2rem 0 2rem 0;
+}
+iframe{
+    width: 100%;
+    border: 0;
+    margin-bottom: 1.5rem;
+}
+footer{
+    background-image: url("./img/footer.png");
+    text-align: center;
+    padding: 0 0 1rem 0;
+    margin-top: 2rem;
+}
+footer a{
+    color: rgb(60, 60, 153);
+    text-align: center;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+}
+
+footer a:hover{
+    color: #b5242b;
+}
+
+footer hr{
+    color: rgba(128, 128, 128, 0.616);
+}
+
+footer p{
+    font-size: 0.6rem;
+    text-align: center;
+    margin: 0.2rem 0.5rem 0.2rem 0.5rem;
+    color: #3d3b3b;
+}
+
+.creditos{
+    font-size: 0.8rem !important;
+    font-weight: bold;
+    color: #b5242b;
+}
