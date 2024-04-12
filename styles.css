@@ -6,8 +6,9 @@ body{
     padding: 0rem;
 }
 .body2{
-    margin: 0 7rem 0rem 7rem;
+    margin: 0 9rem 0rem 9rem;
     align-items: center;
+    color: black;
 }
 
 #nombres li{
@@ -35,17 +36,19 @@ body{
 }
 
 h1{ 
-    font-size: 30px;
-    font-weight: 700;
+    font-size: 60px;
+    font-weight: bolder;
     text-align: center;
-    margin:3rem 1.5rem 1rem 1.5rem;
-    color: #3d3b3b;
+    margin:3rem 4rem 1rem 4rem;
+    /* color: #3d3b3b; */
+    color:#4285F4;
 }
 
 header{
     padding-top: 0.3rem;
     padding-bottom: 0rem;
-    /*background-color: rgb(240, 249, 255);*/
+    background-size: cover;
+    background-repeat: no-repeat;
     background-image: url("./img/header.png");
     width: 100%;
 }
@@ -53,11 +56,12 @@ hr{
     margin-top: 0rem;
     color: #0000007f;
 }
-header p{
+.bajada{
+    margin: 0 4rem 0 4rem; 
+    /* background-color: rgb(244, 244, 244);  */
+    padding: 1rem;
     font-size: 1rem;
-    text-align: center;
-    margin: 0.5rem 0.5rem 2rem 0.5rem;
-    color: #3d3b3b;
+    font-style: italic;
 }
 .row{
     box-sizing: content-box !important;
@@ -69,30 +73,54 @@ header p{
     display: block;
 }
 .subtitulo{
-    font-size: 0.5rem;
-    text-align: center;
-    color: #424242;
-    font-weight: bold;
-    margin: 1.5rem 0 1rem 0;
+    margin: 1.6rem 0 2rem 0;
+    /* margin-bottom: 2rem; */
+}
+.subtitulo h3{
+    font-size: 2rem;
+    text-align: left;
+    /* color: #424242; */
+    font-weight: 700;
 }
 .subtitulo hr{
     width: 40%;
     border: 1.2px solid;
-    margin: 1rem auto 0.3rem auto;
 }
-.contenedor p{
+
+.contenedor p {
+    flex: 1;
     font-size: 1rem;
-    text-align: justify;
-    color: #3d3b3b;
-    margin: 2rem 0 2rem 0;
+    /* color: #3d3b3b; */
+    margin: auto;
 }
+.multi-column-paragraph {
+    column-count: 2; /* Set the number of columns */
+    column-gap: 2.5rem; /* Adjust the gap between columns */
+}
+.contenedor {
+    position: relative;
+}
+
+.iframe-container {
+    float: left;
+}
+
+.texto-derecha {
+    float: right;
+    width: calc(35% - 40px);
+    margin-left: 35px; /* Ajusta el margen del texto según sea necesario */ 
+}
+
 iframe{
-    width: 100%;
+    width: 64%;
     border: 0;
     margin-bottom: 1.5rem;
 }
 footer{
     background-image: url("./img/footer.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
     text-align: center;
     padding: 0 0 1rem 0;
     margin-top: 2rem;
